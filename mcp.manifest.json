@@ -1,0 +1,19 @@
+{
+  "protocol": "model-context-protocol",
+  "version": "1.0",
+  "name": "ai-self-hosted-security-device",
+  "type": "mcp-server",
+  "description": "Exposes security alerts and statistics via Model Context Protocol tools",
+  "tools": [
+    {
+      "name": "recent_alerts",
+      "description": "Retrieve recent detected network anomalies",
+      "readonly": true
+    },
+    {
+      "name": "alert_statistics",
+      "description": "Retrieve summary statistics of detected anomalies",
+      "readonly": true
+    }
+  ]
+}
