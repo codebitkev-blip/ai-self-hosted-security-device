@@ -67,6 +67,7 @@ ai-self-hosted-security-device/
 ├── requirements.txt
 
 ├── docker-compose.yml
+
 ---
 
 ## 🧪 Technologies Used
