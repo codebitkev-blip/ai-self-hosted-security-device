@@ -53,12 +53,19 @@ Local FastAPI Dashboard
 ## 📁 Repository Structure
 
 ai-self-hosted-security-device/
+
 ├── core/ # Packet capture & detection logic
+
 ├── api/ # FastAPI dashboard
+
 ├── storage/ # SQLite database & ML model
+
 ├── scripts/ # Training and helper scripts
+
 ├── security/ # Threat model & hardening notes
+
 ├── requirements.txt
+
 ├── docker-compose.yml
 ---
 
