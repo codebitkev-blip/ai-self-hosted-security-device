@@ -1,0 +1,9 @@
+{
+  "name": "ai-self-hosted-security-device",
+  "description": "MCP server exposing security alerts and statistics from a self-hosted AI security device",
+  "version": "1.0.0",
+  "server": {
+    "command": "python",
+    "args": ["-m", "mcp.server"]
+  }
+}
