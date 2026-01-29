@@ -1,7 +1,19 @@
 from scapy.all import sniff, IP
+from core.detector import handle_packet
 
-def handle_packet(packet):
+def process(packet):
     if IP in packet:
-        print(packet[IP].src, "->", packet[IP].dst)
+        data = {
+            "src": packet[IP].src,
+            "dst": packet[IP].dst,
+            "proto": packet.proto,
+            "size": len(packet)
+        }
+        handle_packet(data)
 
-sniff(prn=handle_packet, store=False)
+def start():
+    sniff(prn=process, store=False)
+
+if __name__ == "__main__":
+    start()
+

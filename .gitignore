@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Local data
+storage/events.db
+storage/model.pkl
+
+# OS files
+.DS_Store
